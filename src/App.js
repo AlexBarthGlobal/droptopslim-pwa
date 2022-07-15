@@ -5,14 +5,13 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 const App = () => {
     
     const scene = new THREE.Scene();
-    // const camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
     const camera = new THREE.PerspectiveCamera( 50, window.innerWidth/window.innerHeight, 0.1, 1000 );
     const renderer = new THREE.WebGLRenderer();
     renderer.setSize( window.innerWidth, window.innerHeight );
     document.body.appendChild( renderer.domElement );
 
     const loader = new GLTFLoader();
-    loader.load('assets/bluwhl.glb', function ( glb ) {
+    loader.load('assets/bluwhl-dolphin-centered.glb', function ( glb ) {
 
       const root = glb.scene;
       scene.add( root );
@@ -24,13 +23,12 @@ const App = () => {
     } );
 
     const light = new THREE.DirectionalLight(0xffffff, 1)
-    // light.position.set(2,2,5)
-    light.position.set(-0.05,0.25,1)
+
+    light.position.set(0,0,1)
     scene.add(light)
 
-    camera.position.z = 13.3;
+    camera.position.z = 15;
     camera.position.y = 2.45;
-    camera.position.x = 0.06;
 
     // var geometry = new THREE.BoxGeometry( 1, 1, 1 );
     // var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
