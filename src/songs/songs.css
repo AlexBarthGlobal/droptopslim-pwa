@@ -1,0 +1,42 @@
+.songs-container {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    justify-content: center;
+    column-gap: 2px;
+    row-gap: max(37px, min(10vw, 180px));
+    margin-bottom: 40px;
+}
+
+.song-art {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+
+.song-art-img {
+    width: 42vw;
+    height: 42vw;
+    max-width: 500px;
+    max-height: 500px;
+    cursor: pointer;
+}
+
+.song-listen {
+    align-items: center;
+    margin-top: 10px;
+    /* border: 1px solid white; */
+    /* border: 2px dotted #e602028c; */
+    border: 2px dotted#e6020280;
+    border-radius: 10px;
+    line-height: 16px;
+    
+    padding: 2.5px;
+    padding-bottom: 5px;
+    padding-left: 3.75px;
+    padding-right: 3.75px;
+    
+    cursor: pointer;
+}
