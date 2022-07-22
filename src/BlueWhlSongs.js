@@ -9,24 +9,25 @@ class BlueWhlSongs extends Component {
         const camera = new THREE.PerspectiveCamera( 25, window.innerWidth/window.innerHeight, 0.1, 1000 );
         const renderer = new THREE.WebGLRenderer();
 
-        const container = document.querySelector('#testdiv');
-        const dims = container.getBoundingClientRect();
+        // const container = document.querySelector('#testdiv');
+        // const dims = container.getBoundingClientRect();
 
-        renderer.setSize( dims.width, dims.height );
-        this.mount.appendChild( renderer.domElement );
+        // renderer.setSize( dims.width, dims.height );
+        // this.mount.appendChild( renderer.domElement );
 
-        const resizeWhl = () => {
-            const dims = container.getBoundingClientRect();
-            renderer.setSize( dims.width, dims.height );
-        }
+        // const resizeWhl = () => {
+        //     const dims = container.getBoundingClientRect();
+        //     renderer.setSize( dims.width, dims.height );
+        // }
 
-        window.addEventListener("resize", resizeWhl);
+        // window.addEventListener("resize", resizeWhl);
 
         const loader = new GLTFLoader();
         loader.load('assets/bluwhl-dolphin-centered2.glb', function ( glb ) {
 
+        // console.log(glb)
         const root = glb.scene;
-        scene.add( root );
+        // scene.add( root );
 
         }, undefined, function ( error ) {
         
@@ -40,14 +41,6 @@ class BlueWhlSongs extends Component {
         scene.add(light)
 
         camera.position.z = 15;
-
-        // var geometry = new THREE.BoxGeometry( 1, 1, 1 );
-        // var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-        // var cube = new THREE.Mesh( geometry, material );
-        // scene.add( cube );
-        // // camera.position.z = 5;
-        // // console.log(root)
-        // console.log(cube)
 
         var animate = function () {
             requestAnimationFrame( animate );
@@ -66,3 +59,15 @@ class BlueWhlSongs extends Component {
     }
 }
 export default BlueWhlSongs;
+
+// var geometry = new THREE.BoxGeometry( 1, 1, 1 );
+        // var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+        // var cube = new THREE.Mesh( geometry, material );
+        // scene.add( cube );
+        // // camera.position.z = 5;
+        // // console.log(root)
+        // console.log(cube)
+
+        // console.log(scene)
+
+        // console.log(scene.children[0])
