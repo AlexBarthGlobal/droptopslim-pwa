@@ -18,34 +18,34 @@ const Songs = () => {
             </div>
             <div className='songs-container'>
                 <div className='song-art'>
-                    <a href='https://ffm.to/droptoplastday.OWE' target="_blank">
+                    <a href='https://ffm.to/droptoplastday.OWE'>
                         <img className='song-art-img' src={lastday}></img>
                     </a>
-                    <a href='https://ffm.to/droptoplastday.OWE' target="_blank">
+                    <a href='https://ffm.to/droptoplastday.OWE'>
                         <div className='song-listen'>Listen</div>
                     </a>
                 </div>
                 <div className='song-art'>
-                    <a href='https://ffm.to/droptopbadguy.OWE' target="_blank">
+                    <a href='https://ffm.to/droptopbadguy.OWE'>
                         <img className='song-art-img' src={badguy}></img>
                     </a>
-                    <a href='https://ffm.to/droptopbadguy.OWE' target="_blank">
+                    <a href='https://ffm.to/droptopbadguy.OWE'>
                         <div className='song-listen'>Listen</div>
                     </a>
                 </div>
                 <div className='song-art'>
-                    <a href='https://ffm.to/guccifromharlem.OWE' target="_blank">
+                    <a href='https://ffm.to/guccifromharlem.OWE'>
                         <img className='song-art-img' src={guccifromharlem}></img>
                     </a>
-                    <a href='https://ffm.to/guccifromharlem.OWE' target="_blank">
+                    <a href='https://ffm.to/guccifromharlem.OWE'>
                         <div className='song-listen'>Listen</div>
                     </a>
                 </div>
                 <div className='song-art'>
-                    <a href='https://ffm.to/nonigga.OWE' target="_blank">
+                    <a href='https://ffm.to/nonigga.OWE'>
                         <img className='song-art-img' src={non}></img>
                     </a>
-                    <a href='https://ffm.to/nonigga.OWE' target="_blank">
+                    <a href='https://ffm.to/nonigga.OWE'>
                         <div className='song-listen'>Listen</div>
                     </a>
                 </div>
