@@ -3,6 +3,7 @@ import lastday from './artwork/lastday.jpg';
 import badguy from './artwork/badguy.jpg';
 import guccifromharlem from './artwork/guccifromharlem.jpg';
 import non from './artwork/non.jpg'
+import stillfeelme from './artwork/stillfeelme.jpg'
 import './songs.css';
 import BlueWhlSongs from '../BlueWhlSongs'
 
@@ -17,6 +18,14 @@ const Songs = () => {
                 <BlueWhlSongs />
             </div>
             <div className='songs-container'>
+                <div className='song-art'>
+                    <a href='https://ffm.to/stillfeelmefreestyle'>
+                        <img className='song-art-img' src={stillfeelme}></img>
+                    </a>
+                    <a href='https://ffm.to/stillfeelmefreestyle'>
+                        <div className='song-listen'>Listen</div>
+                    </a>
+                </div>
                 <div className='song-art'>
                     <a href='https://ffm.to/droptoplastday.OWE'>
                         <img className='song-art-img' src={lastday}></img>
