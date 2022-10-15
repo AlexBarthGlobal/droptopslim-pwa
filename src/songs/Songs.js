@@ -20,8 +20,8 @@ const Songs = () => {
             if (!row.image || !row.link) {
                 continue;
             }
-
-            row.image = row.image.includes('google') ? `https://drive.google.com/uc?id=${row.image.split('/')[5]}` : row.image;
+            console.log('imghere', row.image.split('/'))
+            row.image = row.image.includes('dropbox') ? `https://dropbox.com/s/${row.image.split('/')[4]}?raw=1` : row.image;
 
             loadedEntities.push(<Song key={key} link={row.link} img={row.image} />);
             key++;
